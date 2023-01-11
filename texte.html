@@ -1,0 +1,57 @@
+
+<html>
+
+
+<script>
+    var target = "11a22b33c";
+    var exp = new RegExp('(\\d\\d)(\\w)', 'g');
+    var resultado = exp.exec(target);
+     console.log(resultado);
+     console.log(exp.lastIndex);
+     exp.test(target);
+
+     /* 
+        var alvo = "11a22b33c";
+        var exp = exp = /(\d\d)(\w)/g;
+        var resultado = exp.exec(alvo);
+        console.log(resultado);
+        console.log(exp.lastIndex);
+
+
+    
+        
+        -----resultado = exp.test(target); metodo test retorna true se o alvo seguir o valor da expressao
+        -----resultado =  exp.exec(target); obter como resultado as partes do alvo,
+        console.log(resultado);
+
+
+        var alvo = '11a22b33c'
+        var exp = /(\d\d)(\w)/g;
+        var resultado =  null;
+        while (resultado =  exp.exec(target) ){
+            console.log(resultado);
+            console.log(explastIndex);
+        }
+
+
+        função replace:(substituir ifens por barra)
+         var anoMesDia = '2007-12-31';
+         var exp = /-/g
+         anoMesDia = anoMesDia.replace(exp, '/');
+            '2007/12/31';(resultado)
+
+        função split: (separar itens)
+         var arquivo = '100,200-150,200;20';
+         var exp = /[,;-]/;
+         var valores = arquivo.split(exp);
+            ["100", "200", "150", "200", "20"] (resultado)
+     */
+     
+    
+   
+</script>
+    
+
+
+
+</html>
